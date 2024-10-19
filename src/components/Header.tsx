@@ -13,7 +13,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, isMenuOpen, toggleMenu, scr
     <header className={`fixed w-full z-10 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
-          <img src="/vite.svg" alt="Logo" className="h-8 w-8 mr-3" />
+          <img src="/credit-card-icon.png" alt="Logo" className="h-8 w-8 mr-3" />
           <h1 className={`text-xl md:text-2xl font-bold ${isScrolled ? 'text-blue-600' : 'text-white'}`}>Prevenção de Clonagem</h1>
         </div>
         <nav className="hidden md:block">
