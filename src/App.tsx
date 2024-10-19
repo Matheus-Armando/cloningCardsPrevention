@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { CreditCard, Shield, AlertTriangle, Menu, X } from 'lucide-react'
+import backgroundImage from './assets/credit-card-bg.jpg';
 
 const App: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -27,13 +28,13 @@ const App: React.FC = () => {
       <header className={`fixed w-full z-10 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center">
-            <img src="/vite.svg" alt="Logo" className="h-8 w-8 mr-3" />
-            <h1 className={`text-xl md:text-2xl font-bold ${isScrolled ? 'text-blue-600' : 'text-white'}`}>Prevenção de Clonagem</h1>
+            <img src="/credit-card_icon.png" alt="Logo" className="h-8 w-8 mr-3" />
+            <h1 className={`text-xl md:text-2xl font-bold ${isScrolled ? 'text-blue-600' : 'text-white'}`}>Prevenção de Clonagem de Cartão</h1>
           </div>
           <nav className="hidden md:block">
             <ul className="flex space-x-4">
               <li>
-                <button 
+                <button
                   onClick={() => scrollToSection('como-se-proteger')}
                   className={`px-4 py-2 rounded-md ${isScrolled ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'} hover:bg-blue-700 hover:text-white transition-colors`}
                 >
@@ -41,7 +42,7 @@ const App: React.FC = () => {
                 </button>
               </li>
               <li>
-                <button 
+                <button
                   onClick={() => scrollToSection('contato')}
                   className={`px-4 py-2 rounded-md ${isScrolled ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'} hover:bg-blue-700 hover:text-white transition-colors`}
                 >
@@ -50,7 +51,7 @@ const App: React.FC = () => {
               </li>
             </ul>
           </nav>
-          <button 
+          <button
             className="md:hidden text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -61,7 +62,7 @@ const App: React.FC = () => {
           <div className="md:hidden bg-white">
             <ul className="flex flex-col items-center py-4">
               <li className="mb-2">
-                <button 
+                <button
                   onClick={() => scrollToSection('como-se-proteger')}
                   className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors"
                 >
@@ -69,7 +70,7 @@ const App: React.FC = () => {
                 </button>
               </li>
               <li>
-                <button 
+                <button
                   onClick={() => scrollToSection('contato')}
                   className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors"
                 >
@@ -82,12 +83,12 @@ const App: React.FC = () => {
       </header>
 
       <main className="flex-grow">
-        <section className="h-screen bg-blue-600 flex items-center justify-center text-white relative">
+      <section className="h-screen bg-cover bg-center flex items-center justify-center text-white relative" style={{ backgroundImage: `url(${backgroundImage})` }}>
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="text-center relative z-10 px-4">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Proteja seu Cartão, Proteja seu Dinheiro</h2>
             <p className="text-lg md:text-xl mb-8">Aprenda como se prevenir contra a clonagem de cartões</p>
-            <button 
+            <button
               onClick={() => scrollToSection('como-se-proteger')}
               className="px-6 py-3 bg-white text-blue-600 rounded-md hover:bg-blue-100 transition-colors"
             >
