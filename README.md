@@ -7,6 +7,49 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Matheus-Armando/cloningCardsPrevention
+   cd cloningCardsPrevention
+
+2. Install dependencies:
+   ```sh
+   npm install
+    ```
+   Running the Project 
+    ```sh
+    npm run dev
+    ```
+    Open your browser and navigate to http://localhost:5173 to see the application running.
+
+## Project Structure
+
+Briefly explain the structure of the project:
+```
+your-repo-name/
+├── public/             # Static assets
+├── src/                # Source files
+│   ├── components/     # React components
+│   ├── App.tsx         # Main App component
+│   ├── main.tsx        # Entry point
+│   └── ...             # Other files
+├── .eslintrc.js        # ESLint configuration
+├── [tsconfig.json]     # TypeScript configuration
+├── [package.json]      # Project metadata and dependencies
+└── [README.md]         # This file
+```
+
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
