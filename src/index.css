@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Força o tema claro, ignorando as preferências do usuário */
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
