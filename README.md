@@ -49,6 +49,21 @@ your-repo-name/
 ├── [package.json]      # Project metadata and dependencies
 └── [README.md]         # This file
 ```
+## Contributing
+
+We welcome contributions! Here are some ways you can help:
+
+1. Report bugs: If you find a bug, please open an issue.
+2. Suggest features: If you have an idea for a new feature, please open an issue.
+3. Submit pull requests: If you want to contribute code, please fork the repository and submit a pull request.
+
+#### Steps to Contribute
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature-branch).
+3. Make your changes.
+4. Commit your changes (git commit -m 'Add some feature').
+5. Push to the branch (git push origin feature-branch).
+6. Open a pull request.
 
 ## Expanding the ESLint configuration
 
