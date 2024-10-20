@@ -1,5 +1,5 @@
 import React from 'react';
-import { UsersRound, Share2, ShoppingCart, TriangleAlert, AlertCircle, CreditCard, AlertTriangle } from 'lucide-react';
+import { UsersRound, Share2, ShoppingCart, TriangleAlert} from 'lucide-react';
 
 const ClonageInfo: React.FC = () => {
   return (
