@@ -5,6 +5,8 @@ import ProtectionTips from './components/ProtectionTips';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import backgroundImage from './assets/credit-card-bg.jpg';
+import ClonageInfo from './components/ClonageInfo';
+import ClonedCardActions from './components/ClonedCardActions';
 
 const App: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,6 +39,8 @@ const App: React.FC = () => {
       <main className="flex-grow">
         <HeroSection scrollToSection={scrollToSection} backgroundImage={backgroundImage} />
         <ProtectionTips />
+        <ClonageInfo />
+        <ClonedCardActions />
         <ContactSection />
       </main>
       <Footer />

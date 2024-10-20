@@ -5,7 +5,7 @@ const ProtectionTips: React.FC = () => {
   return (
     <section id="como-se-proteger" className="py-16 bg-gray-100">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">Como se proteger da clonagem de cartões</h2>
+        <h2 className="text-3xl font-bold text-center mb-8 text-blue-600">Como se proteger da clonagem de cartões</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
             <CreditCard className="w-12 h-12 text-blue-600 mb-4" />

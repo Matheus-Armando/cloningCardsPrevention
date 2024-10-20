@@ -11,6 +11,7 @@ const HeroSection: React.FC<MainSectionProps> = ({ scrollToSection, backgroundIm
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="text-center relative z-10 px-4">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">Proteja seu Cartão, Proteja seu Dinheiro</h2>
+        <p className="text-lg md:text-xl mb-8">Nos últimos 12 meses, até 8 milhões de consumidores foram vítimas de golpes financeiros (CNDL/SPC Brasil, 2024)  </p>
         <p className="text-lg md:text-xl mb-8">Aprenda como se prevenir contra a clonagem de cartões</p>
         <button
           onClick={() => scrollToSection('como-se-proteger')}
