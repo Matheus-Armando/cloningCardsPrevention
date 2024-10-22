@@ -19,7 +19,7 @@ const ClonedCardActions: React.FC = () => {
 
           <div className="bg-blue-100 border-l-4 border-blue-500 p-4 rounded-r-lg">
             <p className="text-blue-700">
-              Não está conseguindo entrar em contato? Veja como localizar empresa pelo CNPJ e ter sucesso rápido na comunicação do ocorrido.
+            Não está conseguindo entrar em contato? Veja como <a href="https://loja.spcbrasil.org.br/localizar-empresas" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">localizar empresa pelo CNPJ</a> e ter sucesso rápido na comunicação do ocorrido.
             </p>
           </div>
 
