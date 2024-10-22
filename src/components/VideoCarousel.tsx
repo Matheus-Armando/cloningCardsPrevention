@@ -27,7 +27,7 @@ const VideoCarousel: React.FC = () => {
     centerPadding: '60px',
     slidesToShow: 3,
     speed: 500,
-    beforeChange: (current: number, next: number) => setCurrentSlide(next),
+    beforeChange: (_current: number, next: number) => setCurrentSlide(next),
     responsive: [
       {
         breakpoint: 768,
