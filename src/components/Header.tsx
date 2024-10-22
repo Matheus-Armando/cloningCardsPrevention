@@ -9,6 +9,16 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ isScrolled, isMenuOpen, toggleMenu, scrollToSection }) => {
+  const handleButtonClick = (sectionId: string, label: string) => {
+    if (window.gtag) {
+      window.gtag('event', 'click', {
+        event_category: 'Navigation',
+        event_label: label,
+      });
+    }
+    scrollToSection(sectionId);
+  };
+
   return (
     <header className={`fixed w-full z-10 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -20,7 +30,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, isMenuOpen, toggleMenu, scr
           <ul className="flex space-x-4">
             <li>
               <button 
-                onClick={() => scrollToSection('como-se-proteger')}
+                onClick={() => handleButtonClick('como-se-proteger', 'Como se Proteger')}
                 className={`px-4 py-2 rounded-md ${isScrolled ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'} hover:bg-blue-700 hover:text-white transition-colors`}
               >
                 Como se Proteger
@@ -28,15 +38,15 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, isMenuOpen, toggleMenu, scr
             </li>
             <li>
               <button 
-                onClick={() => scrollToSection('videos')}
-                className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+                onClick={() => handleButtonClick('videos', 'Vídeos')}
+                className={`px-4 py-2 rounded-md ${isScrolled ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'} hover:bg-blue-700 hover:text-white transition-colors`}
               >
                 Vídeos
               </button>
             </li>
             <li>
               <button 
-                onClick={() => scrollToSection('contato')}
+                onClick={() => handleButtonClick('contato', 'Contato')}
                 className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors"
               >
                 Contato
@@ -56,15 +66,23 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, isMenuOpen, toggleMenu, scr
           <ul className="flex flex-col items-center py-4">
             <li className="mb-2">
               <button 
-                onClick={() => scrollToSection('como-se-proteger')}
+                onClick={() => handleButtonClick('como-se-proteger', 'Como se Proteger')}
                 className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors"
               >
                 Como se Proteger
               </button>
             </li>
+            <li className="mb-2">
+              <button 
+                onClick={() => handleButtonClick('videos', 'Vídeos')}
+                className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+              >
+                Vídeos
+              </button>
+            </li>
             <li>
               <button 
-                onClick={() => scrollToSection('contato')}
+                onClick={() => handleButtonClick('contato', 'Contato')}
                 className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors"
               >
                 Contato
