@@ -1,5 +1,5 @@
 import React from 'react';
-import { CreditCard, Shield, AlertTriangle, HandHelping } from 'lucide-react';
+import { CreditCard, Shield, AlertTriangle, HandHelping, WalletCards, SquareMousePointer } from 'lucide-react';
 
 const ProtectionTips: React.FC = () => {
   return (
@@ -28,12 +28,12 @@ const ProtectionTips: React.FC = () => {
             <p>Isso ajuda a evitar a troca de cartão, onde o criminoso substitui seu cartão por outro semelhante.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <Shield className="w-12 h-12 text-blue-600 mb-4" />
+            <SquareMousePointer className="w-12 h-12 text-blue-600 mb-4" />
             <h3 className="text-xl font-semibold mb-2">Vai comprar online? Use seu cartão virtual</h3>
             <p>O cartão virtual gera um número temporário que protege os dados do seu cartão principal.</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <AlertTriangle className="w-12 h-12 text-blue-600 mb-4" />
+            <WalletCards className="w-12 h-12 text-blue-600 mb-4" />
             <h3 className="text-xl font-semibold mb-2">Pague usando carteiras digitais</h3>
             <p>Ao vincular seu cartão às carteiras digitais, você não precisa fornecer suas informações de cartão a cada compra.</p>
           </div>
