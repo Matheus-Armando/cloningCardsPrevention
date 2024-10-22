@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import backgroundImage from './assets/credit-card-bg.jpg';
 import ClonageInfo from './components/ClonageInfo';
 import ClonedCardActions from './components/ClonedCardActions';
+import VideoCarousel from './components/VideoCarousel';
 
 const App: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,6 +42,7 @@ const App: React.FC = () => {
         <ProtectionTips />
         <ClonageInfo />
         <ClonedCardActions />
+        <VideoCarousel />
         <ContactSection />
       </main>
       <Footer />

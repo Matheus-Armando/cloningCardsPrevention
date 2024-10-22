@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, isMenuOpen, toggleMenu, scr
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center">
           <img src="/credit-card-icon.png" alt="Logo" className="h-8 w-8 mr-3" />
-          <h1 className={`text-xl md:text-2xl font-bold ${isScrolled ? 'text-blue-600' : 'text-white'}`}>Prevenção de Clonagem</h1>
+          <h1 className={`text-xl md:text-2xl font-bold ${isScrolled ? 'text-blue-600' : 'text-white'}`}>Prevenção de Clonagem de Cartão</h1>
         </div>
         <nav className="hidden md:block">
           <ul className="flex space-x-4">
@@ -24,6 +24,14 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, isMenuOpen, toggleMenu, scr
                 className={`px-4 py-2 rounded-md ${isScrolled ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'} hover:bg-blue-700 hover:text-white transition-colors`}
               >
                 Como se Proteger
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => scrollToSection('videos')}
+                className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+              >
+                Vídeos
               </button>
             </li>
             <li>
