@@ -17,12 +17,6 @@ const ClonedCardActions: React.FC = () => {
             content="Entre em contato com a instituição financeira emissora do seu cartão assim que suspeitar de clonagem e solicite o bloqueio do cartão para prevenir transações futuras e discuta a possibilidade de reembolso das transações fraudulentas. Geralmente, os bancos oferecem linhas diretas de atendimento 24 horas para essas situações."
           />
 
-          <div className="bg-blue-100 border-l-4 border-blue-500 p-4 rounded-r-lg">
-            <p className="text-blue-700">
-            Não está conseguindo entrar em contato? Veja como <a href="https://loja.spcbrasil.org.br/localizar-empresas" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">localizar empresa pelo CNPJ</a> e ter sucesso rápido na comunicação do ocorrido.
-            </p>
-          </div>
-
           <ActionItem
             icon={<FileText className="w-8 h-8 text-blue-500" />}
             title="Revise suas transações"
