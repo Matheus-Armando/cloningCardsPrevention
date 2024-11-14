@@ -36,6 +36,14 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, isMenuOpen, toggleMenu, scr
                 Como se Proteger
               </button>
             </li>
+            <li className="mb-2">
+              <button 
+                onClick={() => handleButtonClick('entrevista', 'Entrevista')}
+                className={`px-4 py-2 rounded-md ${isScrolled ? 'bg-blue-600 text-white' : 'bg-white text-blue-600'} hover:bg-blue-700 hover:text-white transition-colors`}
+              >
+                Entrevista
+              </button>
+            </li>
             <li>
               <button 
                 onClick={() => handleButtonClick('videos', 'Vídeos')}
@@ -70,6 +78,14 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, isMenuOpen, toggleMenu, scr
                 className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors"
               >
                 Como se Proteger
+              </button>
+            </li>
+            <li className="mb-2">
+              <button 
+                onClick={() => handleButtonClick('entrevista', 'Entrevista')}
+                className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition-colors"
+              >
+                Entrevista
               </button>
             </li>
             <li className="mb-2">
